@@ -52,6 +52,10 @@ ul {
   margin-right: 1rem;
 }
 
+form {
+  z-index: -1;
+}
+
 .links {
   text-decoration: none;
 

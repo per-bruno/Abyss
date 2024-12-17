@@ -36,31 +36,35 @@
           <li>
             <a href="contato/contato.html" class="links">Contato</a>
           </li>
-          <li><a href="server/server.html" class="links">Server</a></li>
+          <li>
+            <a href="server/server.html" class="links">Server</a>
+          </li>
           <li>
             <a href="forum/forum.html" class="links">Forum</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="login-box">
-      <img src="assets/logo.svg" alt="logo" class="logo-img" />
-      <div class="data-login">
-        <p>E-mail</p>
-        <input type="email" name="Digite seu e-mail" id="e-mail" />
-        <p>Senha</p>
-        <input type="password" name="password" id="password" />
-        <div class="remember">
-          <input type="checkbox" id="checkbox" />
-          <span>Lembrar minha senha</span>
-        </div>
-        <div class="btn">
-          <button type="submit" class="login-btn">Entrar na conta</button>
-          <a href="" class="remember-password">Esqueceu sua senha?</a>
-          <button type="button" class="offline-btn">Offline</button>
+    <form action="index.html">
+      <div class="login-box">
+        <img src="assets/logo.svg" alt="logo" class="logo-img" />
+        <div class="data-login">
+          <p>E-mail</p>
+          <input type="email" name="Digite seu e-mail" id="e-mail" required />
+          <p>Senha</p>
+          <input type="password" name="password" id="password" required />
+          <div class="remember">
+            <input type="checkbox" id="checkbox" />
+            <span>Lembrar minha senha</span>
+          </div>
+          <div class="btn">
+            <button type="submit" class="login-btn">Entrar na conta</button>
+            <a href="" class="remember-password">Esqueceu sua senha?</a>
+            <button type="button" class="offline-btn">Offline</button>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
     <footer class="game-info">
       <ul class="footer-icons">
         <li><i class="ph-bold ph-wifi-slash"></i></li>
