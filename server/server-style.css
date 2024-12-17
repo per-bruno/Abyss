@@ -74,22 +74,22 @@ html {
 }
 
 .server-select {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   display: flex;
-  justify-content: space-between; /* Espaça os itens entre si */
-  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   margin-bottom: 1.5rem;
-  padding: 0 1rem; /* Ajusta o espaçamento interno */
+  padding: 0 1rem;
 }
 
 .server-select span {
-  flex: 1; /* Cada span ocupa espaço conforme necessário */
-  text-align: left; /* Alinha o primeiro span à esquerda */
+  flex: 1;
+  text-align: left;
 }
 
 .server-select span:last-child {
-  text-align: right; /* Alinha o status à direita */
+  text-align: right;
 }
 
 .login-btn {
@@ -104,11 +104,13 @@ html {
   cursor: pointer;
 }
 .login-btn:hover {
-  font-size: large;
+  transition: font 0.1s;
+  font-size: 1.7rem;
 }
 
 .back-btn {
   display: flex;
+
   justify-self: center;
   border-style: none;
   background-color: #1e7a9b;
@@ -121,15 +123,52 @@ html {
   cursor: pointer;
 }
 .back-btn:hover {
-  font-size: large;
+  font-size: 1.4rem;
+  transition: font 0.1s;
 }
 a {
   text-decoration: none;
   color: white;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 768px) {
   .content {
-    margin: auto 35%;
+    margin: 0 20%;
+    padding: 2.5rem 2rem;
+  }
+
+  .content p {
+    margin-left: 8%;
+    font-size: 2rem;
+  }
+
+  .login-btn {
+    padding: 1rem 5rem;
+    font-size: 1.6rem;
+  }
+
+  .back-btn {
+    padding: 0.7rem 3rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    margin: auto 25%;
+  }
+
+  .content p {
+    font-size: 2.2rem;
+  }
+
+  .login-btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 6rem;
+  }
+
+  .back-btn {
+    padding: 0.8rem 4rem;
+    font-size: 1.5rem;
   }
 }

@@ -20,6 +20,34 @@ html {
   font-family: var(--font-krona);
   color: #ffffff;
 }
+
+/* Scroll bar */
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #1e7a9b;
+  --sb-size: 12px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+  border: 1px solid #232e33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
 h1 {
   padding-bottom: 3.2rem;
   font-size: 6rem;
@@ -80,22 +108,16 @@ input {
 
 #date {
   font-family: var(--font-inter);
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
 }
 
-.ph-heart {
-  cursor: pointer;
-  font-size: 2.5rem;
-  transition: color 0.3s ease, stroke 0.3s ease;
-}
-
-.ph-fill {
+#like {
   color: #1e7a9b;
-  fill: #1e7a9b;
-  transition: color 0.3s ease, stroke 0.3s ease;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 h2 {
