@@ -225,7 +225,7 @@ header button {
 }
 
 .games-banner img {
-  width: 31.2rem;
+  width: 20.5rem;
   height: auto;
   -webkit-border-top-right-radius: 40px;
   -webkit-border-bottom-left-radius: 40px;
@@ -235,6 +235,33 @@ header button {
   border-bottom-left-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   box-shadow: inset 0px 0px 15px rgba(255, 4, 4, 0.5); /* Sombra interna */
+}
+
+.back-btn {
+  display: flex;
+  justify-self: center;
+  margin-top: 2rem;
+  border-style: none;
+  background-color: var(--brand-color);
+  color: #ffffff;
+  font: var(--title-font);
+  border-radius: 0.6rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.back-btn a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.back-btn:hover {
+  font-size: 1.4rem;
+  transition: font 0.1s;
 }
 
 .common-questions {
@@ -443,7 +470,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 /* .f-info {
-    display: flex;
-    gap: 30px;
-    font-family: var(--text-font);
-  } */
+  display: flex;
+  gap: 30px;
+  font-family: var(--text-font);
+} */
